@@ -1,0 +1,67 @@
+.navbar {
+    background-color:rgb(47, 47, 47);
+    color: rgb(166, 166, 166);
+    height: 65px;
+    width: 1536px;
+    margin-top: -16px;
+    margin-left: -8px;
+}
+.navbar ol{
+    list-style: none;
+   display: flex;
+   gap: 50px;
+   margin-left: 800px;
+}
+.navbar ol li{
+    display: inline;
+    padding-top: 20px;
+}
+.navbar img{
+    margin-top: -165px;
+}
+.aadhar{
+    background-color: rgb(30, 30, 30);
+    margin-left:-8px ;
+    width: 1536px;
+    height: 670px;
+}
+.aadhar img{
+    margin-left: 400px;
+}
+.events img{
+    height: 50px;
+    width: 1400px;
+    margin-left:50px;
+    margin-top: 8px;
+}
+.name ol{
+    list-style: none;
+    display: flex;
+    gap: 55px;
+    margin-left: -40px;
+    margin-top: -10px;
+}
+.name ol li img{
+    height: 10px;
+    width: 90px;
+}
+.name ol li{
+    display: inline;
+}
+.about{
+    background-color:rgb(30, 30, 30) ;
+    color:rgb(166, 166, 166) ;
+    margin-left: -8px;
+    margin-top: -8px;
+    height: 500px;
+    width: 1536px;
+}
+.about h1{
+    margin-left: 720px;
+    padding-top: 80px;
+}
+.about p{
+    margin-left: 50px;
+    margin-top: 90px;
+   font-size: 20px;
+}
