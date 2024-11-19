@@ -16,6 +16,10 @@
     display: inline;
     padding-top: 20px;
 }
+.navbar ol li a{
+    text-decoration: none;
+    color: rgb(166, 166, 166) ;
+}
 .navbar img{
     margin-top: -165px;
 }
@@ -52,16 +56,308 @@
     background-color:rgb(30, 30, 30) ;
     color:rgb(166, 166, 166) ;
     margin-left: -8px;
-    margin-top: -8px;
-    height: 500px;
+    margin-top: -21px;
+    height: 550px;
     width: 1536px;
 }
 .about h1{
     margin-left: 720px;
-    padding-top: 80px;
+    padding-top: 10px;
 }
 .about p{
-    margin-left: 50px;
-    margin-top: 90px;
+    margin-left: 120px;
+    margin-top: 70px;
    font-size: 20px;
+   line-height: 30px;
+}
+.events1{
+ background-color:rgb(30, 30, 30) ;
+ margin-top: -55px;
+ margin-left: -10px;
+ width: 1536px;
+ height: 800px;
+}
+.events1 h1{
+    color: rgb(166, 166, 166) ;
+    margin-top: -30px;
+    margin-left: 740px;
+}
+/* Global container styling */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* General card styling */
+.card {
+    background: linear-gradient(to top, #000000, #666666);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #333;
+}
+
+.card .content {
+    padding: 20px;
+    color: #fff;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.card a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #ff6600; /* Highlight color on hover */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Unique styles for specific cards */
+.robo-war {
+    border: 2px solid black; /* Robo War */
+}
+
+.mom {
+    border: 2px solid black; /* MOM */
+}
+
+.circuitry {
+    border: 2px solid black; /* Circuitry */
+}
+
+.rc-car {
+    border: 2px solid black; /* RC Car */
+}
+
+.micro-mouse {
+    border: 2px solid black; /* Micro Mouse */
+}
+
+.cosmo-clench {
+    border: 2px solid black; /* Cosmo Clench */
+}
+
+.robo-soccer {
+    border: 2px solid black; /* Robo Soccer */
+}
+
+.spud-gun {
+    border: 2px solid black; /* Spud Gun */
+}
+
+.aadhar1{
+    background-color: rgb(30, 30, 30);
+    height: 450px;
+    width: 1536px;
+    margin-top: -50px;
+    margin-left: -10px;
+}
+.aadhar1 h1{
+   margin-top: 50px;
+   color:  rgb(166, 166, 166);
+   margin-left: 700px;
+}
+.aadhar1 p{
+    color:rgb(166, 166, 166);
+    font-size: 20px;
+    margin-left: 120px;
+    line-height: 30px;
+}
+.credits-section{
+    background-color:rgb(30, 30, 30) ;
+    color:rgb(166, 166, 166);
+    margin-left: -10px;
+    margin-top: -25px;
+    width: 1536px;
+}
+.credits-section h1{
+    margin-left: 730px;
+    color: rgb(166, 166, 166) ;
+}
+.credit-card1{
+    margin-top: 120px;
+    margin-left: 320px;
+}
+.credit-card1 h2{
+    margin-left: 90px;
+}
+.credit-card1 p{
+    margin-left: 125px;
+    margin-top: -10px;
+}
+.credit-card2{
+    margin-top: -390px;
+    margin-left: 1000px;
+}
+.credit-card2 h2{
+    margin-left: 65px;
+}
+.credit-card2 p{
+    margin-left: 120px;
+    margin-top: -10px;
+}
+.credit-card3{
+    margin-top: 120px;
+    margin-left: 280px;
+}
+.credit-card3 h2{
+    margin-left: 80px;
+}
+.credit-card3 p{
+    margin-left: 120px;
+    margin-top: -10px;
+}
+.credit-card4{
+    margin-top: -395px;
+    margin-left: 990px;
+}
+.credit-card4 h2{
+    margin-left: 135px;
+}
+.credit-card4 p{
+    margin-left: 140px;
+    margin-top: -10px;
+}
+.footer1{
+    margin-top: -16px;
+    margin-left: -10px;
+}
+footer {
+    background-color: rgb(37, 37, 37); /* Dark background color */
+    color: #ffffff; /* Text color */
+    padding: 40px 20px;
+    margin-top: -16px;
+    margin-left: -10px;
+    width: 1496px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h1 {
+    font-size: 3rem;
+    color: #0047ab; /* Blue color for logo */
+    margin: 0;
+}
+
+.footer-links h3,
+.footer-social h3,
+.footer-email h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: red; /* Red for quick links */
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ff6600; /* Highlight color on hover */
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-email .email-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-email .email-form input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.footer-email .email-form input::placeholder {
+    color: #ffffff;
+}
+
+.footer-email .email-form button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-email .email-form button:hover {
+    color: #ff6600; /* Highlight on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-social,
+    .footer-email {
+        margin-bottom: 20px;
+    }
+}
+.robo h1{
+   color: black;
+}
+.robo img{
+    height: 180px;
+    width: 300px;
 }

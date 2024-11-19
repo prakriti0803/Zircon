@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="registration.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <ol>
+            <li>HOME</li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">AADHAR</a></li>
+            <li><a href="registattion.html">REGISTRATION</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ol>
+        <img src="images\zircon logo.png" height="300px" width="300px">
+    </div>
+  <div class="registration-container">
+    <!-- Background Video -->
+    <video class="background-video" autoplay loop muted>
+      <source src="images/bgv.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="left-side">
+        <h2 class="text-center">Register For AADHAR 13</h2>
+      </div>
+
+      <div class="right-side">
+        <form class="registration-form" id="registrationForm">
+          <!-- Pick Event -->
+          <div class="form-group">
+            <label for="event">Pick Event:</label>
+            <select id="event" name="event" required>
+              <option value="" disabled selected>Select an event</option>
+              <option value="Robo War">Robo War</option>
+              <option value="Micro Mouse">Micro Mouse</option>
+              <option value="Circuitry">Circuitry</option>
+            </select>
+          </div>
+
+          <!-- View Rules Button -->
+          <button type="button" class="btn-view-rules" id="viewRulesBtn">
+            View Rules
+          </button>
+
+          <!-- College/School Name -->
+          <div class="form-group">
+            <label for="college">Enter College/School Name:</label>
+            <input type="text" id="college" name="college" required>
+          </div>
+
+          <!-- Team Name -->
+          <div class="form-group">
+            <label for="teamName">Enter Team Name:</label>
+            <input type="text" id="teamName" name="teamName" required>
+          </div>
+
+          <!-- Team Leader Details -->
+          <div class="form-group">
+            <label for="leaderName">Enter Team Leader Name:</label>
+            <input type="text" id="leaderName" name="leaderName" required>
+          </div>
+          <div class="form-group">
+            <label for="leaderContact">Contact Number:</label>
+            <input type="tel" id="leaderContact" name="leaderContact" required>
+          </div>
+          <div class="form-group">
+            <label for="leaderEmail">Email:</label>
+            <input type="email" id="leaderEmail" name="leaderEmail" required>
+          </div>
+
+          <!-- Team Size -->
+          <div class="form-group">
+            <label for="teamSize">Select Team Size:</label>
+            <select id="teamSize" name="teamSize" required>
+              <option value="" disabled selected>Select team size</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <!-- Team Members -->
+          <div id="teamMembersContainer"></div>
+
+          <p class="pay-here">Pay Here</p>
+
+          <button type="submit" class="btn-submit">
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Rules Overlay -->
+    <div class="rules-overlay" id="rulesOverlay">
+      <div class="rules-content">
+        <h3 id="rulesTitle">Rules for:</h3>
+        <ul id="rulesList"></ul>
+        <button class="close-rules" id="closeRulesBtn">Close</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <!-- ZIRCON Logo Section -->
+        <div class="footer-logo">
+            <h1>ZIRCON</h1>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Aadhar</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    <!-- Email Section -->
+    <div class="footer-email">
+        <h3>GET CONNECTED WITH US</h3>
+        <div class="email-form">
+            <input type="email" placeholder="EMAIL">
+            <button>&rarr;</button>
+        </div>
+    </div>
+</div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
